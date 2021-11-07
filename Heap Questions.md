@@ -19,7 +19,7 @@ print("")
 for i in heap:
     print(-i)
 
-###################################################################################################################################
+---
 # kth smallest element(Max heap)
 
 from heapq import heapify,heappush,heappop
