@@ -1,0 +1,15 @@
+def bfsOfGraph(self, V: int, adj: List[List[int]]) -> List[int]:
+        vis = [0]*V
+        vis[0] = 1
+        q = []
+        q.append(0)
+        bfs = []
+        while(q):
+            k = q.pop(0)
+            bfs.append(k)
+            neigh = adj[k]
+            for i in neigh:
+                if(vis[i]==0):
+                    vis[i] = 1
+                    q.append(i)
+        return bfs
